@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio — Dark</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><span class="dot"></span> <span>My Portfolio</span></div>
+      <nav class="menu">
+        <a href="#projects">Projects</a>
+        <!-- Changed Resume link to directly download PDF -->
+        <a href="assets/Rupin_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a href="#contact">Contact</a>
+        <div class="search" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 21l-4.35-4.35M10.8 18a7.2 7.2 0 1 1 0-14.4 7.2 7.2 0 0 1 0 14.4Z" 
+              stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- About Section -->
+    <section class="hero">
+      <div class="about">
+        <div class="avatar">
+           <img src="assets/me.jpg" alt="My Avatar"/>
+        </div>
+
+        <div>
+          <h1>Hi, I'm RUPIN</h1>
+          <p>A passionate Game Developer</p>
+        </div>
+      </div>
+    </section>
+
+   <!-- Projects -->
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="carousel-wrap">
+    <button class="arrow left" id="leftBtn">
+      <svg viewBox="0 0 24 24"><path d="M15 19 8 12l7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+
+    <div class="carousel" id="carousel">
+      <!-- Project 1 -->
+      <article class="card">
+        <span class="badge">UI/UX</span>
+        <div class="thumb" style="background-image:url('assets/project1.png')"></div>
+        <h3>YO</h3>
+        <p>3D.</p>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="card">
+        <span class="badge">Web</span>
+        <div class="thumb" style="background-image:url('assets/project2.png')"></div>
+        <h3>HUI</h3>
+        <p>2D.</p>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="card">
+        <span class="badge">Branding</span>
+        <div class="thumb" style="background-image:url('assets/project3.png')"></div>
+        <h3>HI</h3>
+        <p>AR.</p>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="card">
+        <span class="badge">3D</span>
+        <div class="thumb" style="background-image:url('assets/project4.png')"></div>
+        <h3>SI</h3>
+        <p>3D.</p>
+      </article>
+
+       <!-- Project 1 -->
+      <article class="card">
+        <span class="badge">UI/UX</span>
+        <div class="thumb" style="background-image:url('assets/project1.png')"></div>
+        <h3>YO</h3>
+        <p>3D.</p>
+      </article>
+
+
+    </div>
+
+    <button class="arrow right" id="rightBtn">
+      <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+</section>
+
+
+    <!-- Resume & Contact Side by Side -->
+    <section id="resume">
+      <div class="resume-contact-grid">
+        <!-- Resume -->
+        <div>
+          <h2 class="section-title">Resume / Education</h2>
+          <!-- Removed the extra download button here -->
+          <div class="resume-card">
+            <h4>Experience</h4>
+            <ul>
+              <li>Internship at Penguin Technology</li>
+            </ul>
+            <h4>Education</h4>
+            <ul>
+              <li>Bachelor’s in Computer Science</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div id="contact">
+          <h2 class="section-title">Contact Me</h2>
+          <div class="contact-card">
+            <form action="https://formspree.io/f/mdkdqjzb" method="POST">
+               <input type="text" name="name" placeholder="Name" required>
+               <input type="email" name="email" placeholder="Email" required>
+               <textarea name="message" placeholder="Message" required></textarea>
+               <button class="btn" type="submit">Send</button>
+             </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <span>© <span id="year"></span> RUPIN </span>
+      <div class="social">
+        <a href="https://github.com/Rupin07" target="_blank" class="github-link">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>
